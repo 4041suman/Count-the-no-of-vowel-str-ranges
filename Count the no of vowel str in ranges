@@ -1,0 +1,15 @@
+class Solution {
+    public int vowelStrings(String[] words, int left, int right) {
+        String vowel="aeiuo";
+        int count=0;
+        for(int i=left;i<=right;i++){
+        String word=words[i];
+        int n=word.length()-1;
+        if(word.charAt(0)=='a' || word.charAt(0)=='e' || word.charAt(0)=='i' || word.charAt(0)=='u' || word.charAt(0)=='o'){
+              if(word.charAt(n)=='a' || word.charAt(n)=='e' || word.charAt(n)=='i' || word.charAt(n)=='u' || word.charAt(n)=='o' )
+                    count++;
+        }
+        }
+        return count;
+    }
+}
